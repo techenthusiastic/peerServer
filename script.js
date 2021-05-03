@@ -5,7 +5,8 @@ app.get("/", (req, res, next) => res.send("Hello world!"));
 //
 const http = require("http");
 const httpServer = http.createServer(app);
-httpServer.listen(9000, function () {
+const PORT = process.env.PORT || 9000;
+httpServer.listen(PORT, function () {
 	console.log(`Server Running on Port 9000`);
 });
 //
