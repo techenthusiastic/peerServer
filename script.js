@@ -13,8 +13,8 @@ const peerServer = ExpressPeerServer(httpServer, {
 	debug: true,
 	path: "/myapp",
 	ssl: {
-		key: fs.readFileSync("./certificates/key.pem", "utf8"),
-		cert: fs.readFileSync("./certificates/cert.pem", "utf8"),
+		key: fs.readFileSync("./cert/key.pem", "utf8"),
+		cert: fs.readFileSync("./cert/cert.pem", "utf8"),
 	},
 });
 //
